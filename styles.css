@@ -40,6 +40,7 @@ body {
   font-size: 1.5rem;
   text-align: center;
   font-weight: 800;
+  color: rgb(140, 88, 24);
 }
 
 #message {
@@ -47,6 +48,16 @@ body {
   text-align: center;
   font-style: italic;
   margin-bottom: 2rem;
+}
+
+#player-txt {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: rgb(140, 88, 24);
+  white-space: pre-wrap;
 }
 
 /* Button Styling */

@@ -8,6 +8,15 @@ let sumTxt = document.querySelector("#sum-txt");
 let drawBtn = document.getElementById("draw-btn");
 let sum = 0;
 let cards = [];
+let playerTxt = document.getElementById("player-txt");
+
+// Player Info
+let player = {
+  name: "",
+  points: 0,
+};
+
+player.name = prompt("Please enter a username", "Link of Hyrule");
 
 // Function for generating random integer between a min and max
 function genRandomInt(min, max) {
@@ -27,6 +36,8 @@ function getNewCard(min, max) {
 
 //  Function that starts the new game nad initalises variables
 function startGame() {
+  playerTxt.textContent =
+    "Name: " + player.name + "     Points: " + player.points;
   // initialise / reinitialise variables
   cards = [];
   canKeepPlaying = true;
@@ -71,6 +82,7 @@ function checkBlackjack() {
       "The sum of your cards is " + sum + ". Do you want to draw another card?";
   } else if (sum === 21) {
     msg = "You got Blackjack! Congratulations!!";
+    player.points += 1;
     hasBlackJack = true;
     drawBtn.style = "visibility: collapse";
   } else {
