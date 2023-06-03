@@ -1,0 +1,95 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Whole Page Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cormorant", serif;
+}
+
+body {
+  color: bisque;
+  background-image: url("https://images.unsplash.com/photo-1532444564054-53f6d85adb3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+/* Text Styling */
+.main-title {
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 4rem;
+  text-decoration: underline;
+}
+
+.heading-title {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+#message {
+  font-size: 1.25rem;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+/* Button Styling */
+#btn-section {
+  margin: auto;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.blackjack-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  width: 60%;
+  font-size: 1.5rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 10rem;
+  height: 3rem;
+  color: bisque;
+  /* font-style: italic; */
+  padding: 0.5rem;
+}
+
+#start-btn {
+  background-color: rgb(47, 74, 10);
+}
+
+#draw-btn {
+  background-color: rgb(123, 80, 11);
+  visibility: collapse;
+}
+
+#start-btn:hover {
+  background-color: rgb(40, 62, 8);
+  transition: ease-out 0.7s;
+  cursor: pointer;
+}
+
+#draw-btn:hover {
+  background-color: rgb(99, 64, 8);
+  transition: ease-out 0.7s;
+  cursor: pointer;
+}
